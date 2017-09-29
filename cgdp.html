@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>店铺</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/cgdp.css" />
+    <style type="text/css">
+    body{
+      overflow: scroll;
+    }
+      #demo {
+            position: fixed;
+            padding: 0.5rem 0.2rem;
+            right: 0;
+            bottom: 0.75rem;
+            background-color: #e0e0e0;
+            color: #212121;
+            z-index: 9999;
+        }
+        .main-content{
+          position: relative;
+          z-index: 998;
+        }
+        .fixed{position:fixed;top:45px;margin-top:0;}
+        .swipe-wrap{
+          margin-top: 45px;
+        }
+        .main-goods-section-r{
+          overflow: hidden;
+        }
+    }
+    #main{
+        transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); 
+        transition-duration: 0ms;
+        transform: translateZ(0px);
+    }
+    </style>
+</head>
+<body style="overflow: hidden;">
+  <div class="zhezhao"></div>
+	<header>
+		<div class="top-bar">
+			<div class="top-left"></div>
+			<div class="top-zhong">源美店铺</div>
+			<div class="top-right"></div>
+      <div class="top-gwc"><img class="top-gwcl" src="./image/gouwuche.png"/><img class="top-gwcr" src="./image/my@2x.png"/></div>
+		</div>
+	
+		
+	</header>
+	<div id="main">
+
+  <!-- 轮播 -->
+		<div class="swipe-wrap">
+        <div class="gzs"><span><img class="address" src="./image/address@2x.png"/></span><span class="thq">广州市天河区</span><span>></span></div>
+        <div class="ssy"><img src="./image/ssy@2x.png"/>搜索店内商品</div>
+        <div class="swiper-container swiper-home swipe-content">
+            <div class="swiper-wrapper">
+                <!-- <foreach name="adInfo" item="vo">
+                <div class="swiper-slide"><a href="{$vo.adurl}"><img src="/{$vo.adfile}" width="100%" height="100%"></a>
+                </div>
+                </foreach> -->
+                <div class="swiper-slide"><a href="#"><img src="./image/dad.png" width="100%" height="100%"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./image/dad.png" width="100%" height="100%"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./image/dad.png" width="100%" height="100%"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./image/dad.png" width="100%" height="100%"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+		<div class="main-content">
+			<div class="main-tab-box">
+				<div class="main-tab main-tab-1 main-tab-sel">商品</div>
+				<div class="main-tab main-tab-2">选择分店</div>
+				<div class="main-tab main-tab-3">客服</div>
+			</div>
+
+      
+
+      <div class="b-main-section">
+    			<div class="main-section main-goods-section" style="">
+          <div class="pjsj">29元起送, 配送费5元; 满100元包邮; 平均配送时间45分钟</div>
+                   <div style="">
+                      <div class="main-goods-section-l">
+                          <ul class="zuolb">
+                              <li class="main-goods-section-l-active">专场</li>
+                              <li>热销</li>
+                              <li>特价</li>
+                              <li>店内环境</li>
+                              <li>凑单加项</li>
+                              <li>点心糖水</li>
+                              <li>双人碟饭</li>
+                              <li>粥类</li>
+                          </ul>
+                      </div>
+                      <div class="main-goods-section-r">
+                          <div class="main-goods-section-cnt cnt-show">
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="main-goods-section-cnt">
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="main-goods-section-cnt">
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                              <div class="main-goods-section-r-lb">
+                                  <div class="main-goods-section-r-tp"></div>
+                                  <div class="main-goods-section-r-ypz"><div class="yupz">鱼片粥</div><div class="xxss">新鲜上市</div><div class="ysj">月售21</div><div class="dj">¥9.9</div></div>
+                                  <div class="sfq">
+                                      <div class="jian">-</div>
+                                      <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                      <div class="jia">+</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="gwc-tan">
+                         <div class="gwc-tan1"><img class="trash" src="./image/trash.png"/>清空购物车</div>
+                         <div class="gwc-ttab">
+                             <div class="jd">煎蛋</div>
+                             <div class="jd-m">￥2</div>
+                             <div class="sfq">
+                                  <div class="jian">-</div>
+                                  <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                  <div class="jia">+</div>
+                             </div>
+                         </div>
+                         
+                         <div class="gwc-ttab">
+                             <div class="jd">玉米煎饺</div>
+                             <div class="jd-m">￥8</div>
+                             <div class="sfq">
+                                  <div class="jian">-</div>
+                                  <input class="v-jg" type="number" readonly unselectable="on" value="" />
+                                  <div class="jia">+</div>
+                             </div>
+                         </div>
+                      </div>
+                   
+                      <div class="main-goods-section-bot">
+                          <div class="gwc"><img class="gwc-dj" src="./image/gwc2@2x.png"/><span class="gwc-circle">0</span></div>
+                          <div class="js-jg">另需¥5元配送费, 满¥100元包邮</div>
+                          <div class="qjs">￥9.9元起送</div>
+                      </div>
+                   </div>      
+                </div>
+
+    			<div class="main-section main-shop-section" style="display: none;">
+            <div class="fffd">
+        				<div class="main-shop-section-2">
+                  <div class="lhx">林和西店<div class="jind"><img class="madidoufu" src="./image/maidoufu.png"/>&nbsp;进店&nbsp;<img class="return" src="./image/return.png"/></div></div>
+        					<div class="section-info section-info-1"><span>服务时间: <span class="wlg">8:00-22:00</span></span></div>
+        					<div class="section-info section-info-2"><span>商家电话：<span class="wlg">13998377389</span></span><b></b></div>
+        					<div class="section-info section-info-3"><span class="sjdz">商家地址：</span><span class="xxdz wlg">天河北路171号祥龙花园晖祥阁2007花园晖祥阁2007花园晖祥阁2007</span><span class="daoh">导航</span></div>
+        				</div>
+
+        				<div class="main-shop-section-2">
+                  <div class="lhx">小金店<div class="jind"><img class="madidoufu" src="./image/maidoufu.png"/>&nbsp;进店&nbsp;<img class="return" src="./image/return.png"/></div></div> 
+                  <div class="section-info section-info-1"><span>服务时间: 8:00-22:00</span></div>
+                  <div class="section-info section-info-2"><span>商家电话：13998377389</span><b></b></div>
+                  <div class="section-info section-info-3"><span class="sjdz">商家地址：</span><span class="xxdz">天河北路171号祥龙花园晖祥阁2007花园晖祥阁2007花园晖祥阁2007</span><span class="daoh">导航</span></div>
+                </div>
+
+        				<div class="main-shop-section-2">
+                  <div class="lhx">岗顶店<div class="jind"><img class="madidoufu" src="./image/maidoufu.png"/>&nbsp;进店&nbsp;<img class="return" src="./image/return.png"/></div></div>
+                  <div class="section-info section-info-1"><span>服务时间: 8:00-22:00</span></div>
+                  <div class="section-info section-info-2"><span>商家电话：13998377389</span><b></b></div>
+                  <div class="section-info section-info-3"><span class="sjdz">商家地址：</span><span class="xxdz">天河北路171号祥龙花园晖祥阁2007花园晖祥阁2007花园晖祥阁2007</span><span class="daoh">导航</span></div>
+                </div>
+            </div>
+    			</div>
+      </div>
+		</div>
+	</div>
+
+</body>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <!-- <script type="text/javascript" src="../js/goshop.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/app.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/aui-scroll.js" ></script> -->
+    <script type="text/javascript">
+
+        var startX,//触摸时的坐标
+            startY,
+             x, //滑动的距离
+             y,
+             aboveY=0; 
+        var dom = document.getElementById('main');
+        var html_h = $("html").height();
+        var dom_h = $("#main").height();
+        //touchStart事件
+        dom.addEventListener('touchstart',function(e){
+            e.preventDefault();
+            var touch=e.touches[0];
+            startY = touch.pageY;
+        },false);
+        //touchmove事件
+        dom.addEventListener('touchmove',function(e){
+            e.preventDefault();        
+            var  touch = e.touches[0];               
+            y = touch.pageY - startY;
+            // console.log(endY);         
+            $('#main').css("transform","translate(0px,"+(aboveY+y)+"px) translateZ(0px)");
+            $('#main').css("transition-timing-function","cubic-bezier(0.1, 0.57, 0.1, 1)");
+            $('#main').css("transition-duration","0ms");
+        },false);
+        //touchend事件
+        dom.addEventListener('touchend',function(e){
+            e.preventDefault();
+            var arr = $("#main").css("transform").split(',');
+            aboveY = parseInt(arr[5].substr(0,arr[5].length-1));
+            if(arr[5].substr(0,arr[5].length-1)>0){
+                $('#main').css("transform", "translate(0px, 0px) translateZ(0px)");
+                $('#main').css("transition-timing-function","cubic-bezier(0.1, 0.57, 0.1, 1)");
+                $('#main').css("transition-duration","600ms");
+                aboveY = 0;
+            } else if((html_h-dom_h)>aboveY) {
+                $('#main').css("transform", "translate(0px, "+(html_h-dom_h)+"px) translateZ(0px)");
+                $('#main').css("transition-timing-function","cubic-bezier(0.1, 0.57, 0.1, 1)");
+                $('#main').css("transition-duration","600ms");
+                aboveY = (html_h-dom_h);
+            }
+        },false);
+  
+
+
+
+   
+    // var scroll = new auiScroll({
+    //     listen:true,
+    //     distance:200 //判断到达底部的距离，isToBottom为true
+    // },function(ret){
+    //     if(ret.isToBottom){
+    //         document.getElementById("demo").textContent = "已到达底部";
+    //     }else{
+    //         document.getElementById("demo").textContent = "滚动高度："+ret.scrollTop;
+    //     }
+
+    // });
+      $('.gwc-dj').click(function() {           
+           $('.gwc-tan').stop().slideToggle();
+           $('.zhezhao').toggleClass('zhezhao-active');
+      });
+
+      var mySwiper = new Swiper('.swiper-container', {
+          autoplay: 5000,//可选选项，自动滑动
+          loop: true,
+          pagination : '.swiper-pagination',
+          effect : 'coverflow',
+          slidesPerView: 1,
+          centeredSlides: true,
+          coverflow: {
+                      rotate: 30,
+                      stretch: 10,
+                      depth: 60,
+                      modifier: 1.5,
+                      slideShadows : true
+                  }
+      })
+
+     //  var sw_h = $('.swipe-wrap').height();
+     //  $('.main-tab-box').css('top', sw_h+42);
+     //  $('.pjsj').css('top', sw_h+80);
+     //  $('.main-goods-section-l').css('top', sw_h+110);
+     //  $('.main-goods-section-r').css('top', sw_h+110);
+     //  $('.fffd').css('top', sw_h+80);
+     // console.log($('.swipe-wrap').height());
+    </script>
+</html>
